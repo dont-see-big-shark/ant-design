@@ -15,6 +15,61 @@ timeline: true
 
 ---
 
+## 4.18.5
+
+`2022-01-24`
+
+- Cascader
+  - 🐞 修复 Cascader 弹层超出屏幕时不会自动偏移以及激活选项不会自动滚动到正确位置的问题。[#33777](https://github.com/ant-design/ant-design/pull/33777)
+  - 💄 修复 Cascader 加载中图标。[#33799](https://github.com/ant-design/ant-design/pull/33799)
+- 💄 修复 Tag 在暗黑主题下的样式。[#33751](https://github.com/ant-design/ant-design/pull/33751)
+- 💄 修复 Tooltip 的子元素含有禁用态的 CheckBox 时可能引起的行为和样式异常。[#33772](https://github.com/ant-design/ant-design/pull/33772) [@boomler](https://github.com/boomler)
+- ⚡️ 优化 Row 和 Layout.Sider 的 hooks 依赖数组。[#33804](https://github.com/ant-design/ant-design/pull/33804) [@mrwd2009](https://github.com/mrwd2009)
+- 🐞 修复 Card `ref` 不生效的问题。[#33784](https://github.com/ant-design/ant-design/pull/33784) [@LongHaoo](https://github.com/LongHaoo)
+- 🐞 修复动态修改 Checkbox 的 `value` 时 `onChange` 不能正确传入修改后的值的问题。[#33753](https://github.com/ant-design/ant-design/pull/33753)
+
+## 4.18.4
+
+`2022-01-18`
+
+- Typography
+  - ⚡️ 优化 Typography 在配置 `tooltip` 时优先使用原生省略样式以提升性能。[#33669](https://github.com/ant-design/ant-design/pull/33669)
+  - 🐞 重构 Typography `ellipsis` 逻辑以修复 `children` 如果消费上游 Context 会报错的问题。 [#33725](https://github.com/ant-design/ant-design/pull/33725)
+- Icon
+  - 🐞 修复 `<Icon component={HomeOutlined} />` 和 `<HomeOutlined />` 不对齐的问题。[#33709](https://github.com/ant-design/ant-design/pull/33709)
+  - 🐞 修复 `<Icon component={SyncOutlined} spin />` 抖动的问题。[#33726](https://github.com/ant-design/ant-design/pull/33726) [@JX-Zhuang](https://github.com/JX-Zhuang)
+- Input
+  - 🐞 修复 Input 相关组件设置 `hidden` 时的展示问题。[#33735](https://github.com/ant-design/ant-design/pull/33735) [@fanerge](https://github.com/fanerge)，[#33706](https://github.com/ant-design/ant-design/pull/33706) [@hydraZty](https://github.com/hydraZty)
+  - 🐞 修复 Input 传入 `showCount` 时控制台 warning 问题。[#33686](https://github.com/ant-design/ant-design/pull/33686) [@whwangms](https://github.com/whwangms)
+- ⚡️ 修复 ConfigProvider 和 Anchor 的渲染函数多次运行的问题。[#33723](https://github.com/ant-design/ant-design/pull/33723) [@mrwd2009](https://github.com/mrwd2009)
+- 🐞 修复 Cascader 组件中出现重复 key 的控制台 warning 问题。[#33649](https://github.com/ant-design/ant-design/pull/33649) [@dimbslmh](https://github.com/dimbslmh)
+- 🐞 Checkbox.Group 的 `options` 支持数组中直接传入 number 和 boolean 类型。[#33678](https://github.com/ant-design/ant-design/pull/33678)
+- 🐞 修复 Form `validateMessages` 在多个 ConfigProvider 内错乱的问题。[#33705](https://github.com/ant-design/ant-design/pull/33705)
+- 🐞 修复 Steps 组件在 `type` 为 navigation 和 `labelPlacement` 为 vertical 时，tail 部分不会显示的问题。[#33716](https://github.com/ant-design/ant-design/pull/33716) [@toSayNothing](https://github.com/toSayNothing)
+- 🐞 修复 Image 底部留白问题。[#33631](https://github.com/ant-design/ant-design/pull/33631) [@fanerge](https://github.com/fanerge)
+- 🐞 修复 TreeSelect 键盘操作时，激活项不会高亮的问题。[#33755](https://github.com/ant-design/ant-design/pull/33755)
+- 🇰🇭 修正高棉语 (km_KH) 语言包中部分翻译。[#33738](https://github.com/ant-design/ant-design/pull/33738) [@vireakkeosokvibol](https://github.com/vireakkeosokvibol)
+
+## 4.18.3
+
+`2022-01-10`
+
+- 🆕 Menu 组件支持 `home`（跳转到第一项）和 `end`（跳转到最后一项）的键盘操作。[#33642](https://github.com/ant-design/ant-design/pull/33642) [@dartamonov-vertex](https://github.com/dartamonov-vertex)
+- Table
+  - ⚡️ 大幅优化 Table 渲染时和卸载时的性能。[#33554](https://github.com/ant-design/ant-design/pull/33554)
+  - 🐞 修复 Table 空状态未居中显示。[#33610](https://github.com/ant-design/ant-design/pull/33610) [@hemengke1997](https://github.com/hemengke1997)
+  - 🐞 修复 Table 树形数据展示 hover 高亮异常的问题。[#33638](https://github.com/ant-design/ant-design/pull/33638) [@LongHaoo](https://github.com/LongHaoo)
+- Form
+  - 🐞 修复 Form 在英文语言包下错误提示文案不生效的问题。[#33511](https://github.com/ant-design/ant-design/pull/33511)
+  - 🐞 修复 Form.Item `help` 使用空字符串的时候布局抖动的问题。[#33644](https://github.com/ant-design/ant-design/pull/33644)
+- 🐞 修复 Input.Textarea 在 preact 下报错的问题。[#33536](https://github.com/ant-design/ant-design/pull/33536) [@developit](https://github.com/developit)
+- 🐞 修复 PageHeader unmounted 后报 `React state update on an unmounted component` 的错误。[#33546](https://github.com/ant-design/ant-design/pull/33546) [@wuifdesign](https://github.com/wuifdesign)
+- 💄 修复 Select 使用 `tagRender` 时标签上下边距不统一的问题。[#33539](https://github.com/ant-design/ant-design/pull/33539)
+- 💄 移除 svg 针对 IE9- 的重设样式，修复全局样式影响部分 svg 元素的问题。[#33579](https://github.com/ant-design/ant-design/pull/33579)
+- TypeScript
+  - 🤖 修复 Upload 泛型定义。[#33543](https://github.com/ant-design/ant-design/pull/33543) [@woochanleee](https://github.com/woochanleee)
+  - 🤖 修复 Card.Grid 未能正常支持 `onClick` 的问题。[#33563](https://github.com/ant-design/ant-design/pull/33563) [@LongHaoo](https://github.com/LongHaoo)
+
 ## 4.18.2
 
 `2021-12-30`

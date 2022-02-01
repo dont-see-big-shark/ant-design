@@ -15,6 +15,61 @@ timeline: true
 
 ---
 
+## 4.18.5
+
+`2022-01-24`
+
+- Cascader
+  - 💄 Fix Cascader loading icon. [#33799](https://github.com/ant-design/ant-design/pull/33799)
+  - 🐞 Fix Cascader not auto offset placement when popup is out of screen and fix active option out of screen not scroll. [#33777](https://github.com/ant-design/ant-design/pull/33777)
+- 💄 Fix Tag style in dark theme. [#33751](https://github.com/ant-design/ant-design/pull/33751)
+- 💄 Fix disabled Checkbox inside Tooltip dom structure. [#33772](https://github.com/ant-design/ant-design/pull/33772) [@boomler](https://github.com/boomler)
+- ⚡️ Fix invalid hook dependency array in Row and Layout.Sider components. [#33804](https://github.com/ant-design/ant-design/pull/33804) [@mrwd2009](https://github.com/mrwd2009)
+- 🐞 Fix Card `ref` not working. [#33784](https://github.com/ant-design/ant-design/pull/33784) [@LongHaoo](https://github.com/LongHaoo)
+- 🐞 Fix a Checkbox problem that `onChange` could not correctly pass in the modified value when dynamically modifying `value` property. [#33753](https://github.com/ant-design/ant-design/pull/33753)
+
+## 4.18.4
+
+`2022-01-18`
+
+- Typography
+  - ⚡️ Optimize Typography to use native css ellipsis when `tooltip` is configured. [#33669](https://github.com/ant-design/ant-design/pull/33669)
+  - 🐞 Refactor Typography `ellipsis` logic to fix error when `children` use Context content. [#33725](https://github.com/ant-design/ant-design/pull/33725)
+- Icon
+  - 🐞 Fix `<Icon component={HomeOutlined} />` and `<HomeOutlined />` not aligned. (https://github.com/ant-design/ant-design/pull/33709)
+  - 🐞 Fix `<Icon component={SyncOutlined} spin />` shake. [#33726](https://github.com/ant-design/ant-design/pull/33726) [@JX-Zhuang](https://github.com/JX-Zhuang)
+- Input
+  - 🐞 Fix the display effect for Input related components with `hidden`. [#33735](https://github.com/ant-design/ant-design/pull/33735) [@fanerge](https://github.com/fanerge) [#33706](https://github.com/ant-design/ant-design/pull/33706) [@hydraZty](https://github.com/hydraZty)
+  - 🐞 Fix the warning in console for Input with `showCount`. [#33686](https://github.com/ant-design/ant-design/pull/33686) [@whwangms](https://github.com/whwangms)
+- ⚡️ Fix ConfigProvider and Anchor rerender unexpectedly. [#33723](https://github.com/ant-design/ant-design/pull/33723) [@mrwd2009](https://github.com/mrwd2009)
+- 🐞 Fix the duplicate keys warning in console for Cascader. [#33649](https://github.com/ant-design/ant-design/pull/33649) [@dimbslmh](https://github.com/dimbslmh)
+- 🐞 Checkbox.Group support number and boolean as options element. [#33678](https://github.com/ant-design/ant-design/pull/33678)
+- 🐞 Fix Form `validateMessages` bug in multiple ConfigProvider. [#33705](https://github.com/ant-design/ant-design/pull/33705)
+- 🐞 Fix Steps the tail part would be hidden when type is navigation and labelPlacement is vertical. [#33716](https://github.com/ant-design/ant-design/pull/33716) [@toSayNothing](https://github.com/toSayNothing)
+- 🐞 Fix Image has bottom blank style. [#33631](https://github.com/ant-design/ant-design/pull/33631) [@fanerge](https://github.com/fanerge)
+- 🐞 Fix TreeSelect with keyboard operation missing highlight issue. [#33755](https://github.com/ant-design/ant-design/pull/33755)
+- 🇰🇭 Fix some translations for Khmer (km_KH). [#33738](https://github.com/ant-design/ant-design/pull/33738) [@vireakkeosokvibol](https://github.com/vireakkeosokvibol)
+
+## 4.18.3
+
+`2022-01-10`
+
+- 🆕 Menu support `home` and `end` keyboard navigate. [#33642](https://github.com/ant-design/ant-design/pull/33642) [@dartamonov-vertex](https://github.com/dartamonov-vertex)
+- Table
+  - ⚡️ Improve Table perfermance significantly when mount and unmount. [#33554](https://github.com/ant-design/ant-design/pull/33554)
+  - 🐞 Fix Table emptynode fixed display. [#33610](https://github.com/ant-design/ant-design/pull/33610) [@hemengke1997](https://github.com/hemengke1997)
+  - 🐞 Fix Table tree data hover error. [#33638](https://github.com/ant-design/ant-design/pull/33638) [@LongHaoo](https://github.com/LongHaoo)
+- Form
+  - 🐞 Fix Form validateMessages is not correct in default locale. [#33511](https://github.com/ant-design/ant-design/pull/33511)
+  - 🐞 Fix Form.Item help with empty string makes layout shaking. [#33644](https://github.com/ant-design/ant-design/pull/33644)
+- 🐞 Fix Input.Textarea throws error on preact. [#33536](https://github.com/ant-design/ant-design/pull/33536) [@developit](https://github.com/developit)
+- 🐞 Fix PageHeader state update error after unmounted. [#33546](https://github.com/ant-design/ant-design/pull/33546) [@wuifdesign](https://github.com/wuifdesign)
+- 💄 Fix Select tag margin issue when using `tagRender`. [#33539](https://github.com/ant-design/ant-design/pull/33539)
+- 💄 Remove svg reset style for IE9-, fix svg elements being cutting style problem. [#33579](https://github.com/ant-design/ant-design/pull/33579)
+- TypeScript
+  - 🤖 Fix Upload types for pass generic. [#33543](https://github.com/ant-design/ant-design/pull/33543) [@woochanleee](https://github.com/woochanleee)
+  - 🤖 Fix Card.Grid props should expose Div Properties like `onClick`. [#33563](https://github.com/ant-design/ant-design/pull/33563) [@LongHaoo](https://github.com/LongHaoo)
+
 ## 4.18.2
 
 `2021-12-30`
